@@ -1,0 +1,35 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model form.Models.User
+<div class="container">
+        <h3>Enter your information</h3>
+        <form class='big_form' asp-controller="Home" asp-action="result" method="POST">
+            <div class="form-group">
+                <span asp-validation-for="FirstName"></span>
+                <label asp-for="FirstName"></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" asp-for='FirstName' value="">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="LastName"></span>
+                <label asp-for="LastName"></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" asp-for='LastName' value="">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Age"></span>
+                <label asp-for="Age"></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" asp-for='Age' value="">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Email"></span>
+                <label asp-for="Email"></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" asp-for='Email' value="">
+            </div>
+            <div class="form-group">
+                <span asp-validation-for="Password"></span>
+                <label asp-for="Password"></label>
+                <input type="Password" class="form-control" id="exampleFormControlInput1" asp-for='Password' value="">
+            </div>
+            <button type="submit" value='submit' class="btn btn-primary">Submit</button>
+        </form>
+    </div>

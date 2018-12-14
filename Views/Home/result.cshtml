@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@model form.Models.User
+<div class="container">
+        <h3>Thanks for submitting!</h3>
+        <div id="info">
+            <p>First Name: @Model.FirstName</p>
+            <p>Last Name: @Model.LastName</p>
+            <p>Age: @Model.Age</p>
+            <p>Email Address: @Model.Email</p>
+            <a class='btn btn-secondary' href="/">Go back</a>
+        </div>
+    </div>
